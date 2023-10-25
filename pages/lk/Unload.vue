@@ -16,7 +16,7 @@
                 <UploadBlockDetails v-if="Number(selectedId)" :selected-id="selectedId" @close="selectedId = null"
                     :key="selectedId" />
                 <UploadNotice v-else>
-                    Для того, чтобы просмотреть информацию о выгрузке, а также ее скачать, нажмите на требуемую выгрузку в
+                    Для того, чтобы просмотреть информацию о <span class="text-bold">выгрузке</span>, а также ее скачать, нажмите на требуемую выгрузку в
                     столбце слева.
                 </UploadNotice>
             </div>

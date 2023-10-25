@@ -85,6 +85,7 @@ function copyLink(link) {
 <style lang="scss">
 .block_header {
     position: absolute;
+    background-color: #f5f6f6;
     left: 0;
     right: 0;
     top: 0;
@@ -97,14 +98,18 @@ function copyLink(link) {
         background-color: purple;
         color: white;
         grid-area: a;
-        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     &_heading {
-        background-color: #f5f6f6;
         padding: 10px;
         width: 100%;
         grid-area: b;
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 
     &_close {
@@ -113,10 +118,11 @@ function copyLink(link) {
         padding-bottom: 3px;
         display: none;
         grid-area: c;
-        text-align: center;
 
         @include start-at("xslg") {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
