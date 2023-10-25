@@ -1,75 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Hello
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+В процессе решения задачи возникали вопросы, есть непонятные нюансы. Поэтому реализовал так, как показалось допустимым.
+Касаемо компонентов, я бы еще дробил, но в требовании было только обертки и "Запомните, нам важно умение быстро решать задачи и находить решения. Все в равных условиях и нам нужны лучшие.", поэтому подумал, что первое требование "только обертки" с этой целью, поэтому тоже сильно не дробил.
 
-## Setup
+И если бы задание было не тестовым, то можно улучшать интерфейс. Но оставляю как есть, так как старался показать умение решать задачи.
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Спасибо.
