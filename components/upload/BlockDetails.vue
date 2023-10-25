@@ -27,6 +27,9 @@
                 <i v-if="linkCoppied" style="color: green;" class="fa-solid fa-check"></i>
             </p>
         </div>
+        <div class="block_footer">
+            <button class="btn btn-close btn-lg" @click="$emit('close')">Закрыть</button>
+        </div>
 
     </UploadBlock>
 </template>
@@ -81,27 +84,40 @@ function copyLink(link) {
 
 <style lang="scss">
 .block_header {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     width: 100%;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:"a a b b b b b c";
 
     &_num {
         padding: 10px;
         background-color: purple;
         color: white;
+        grid-area: a;
+        text-align: center;
     }
 
     &_heading {
         background-color: #f5f6f6;
         padding: 10px;
         width: 100%;
+        grid-area: b;
     }
 
     &_close {
         background-color: red;
         padding-top: 3px;
         padding-bottom: 3px;
+        display: none;
+        grid-area: c;
+        text-align: center;
+
+        @include start-at("xslg") {
+            display: block;
+        }
     }
 }
 
@@ -112,6 +128,16 @@ function copyLink(link) {
         padding: 10px;
         background-color: #e5e5e5;
         border-radius: 3px;
+        margin-top: 55px;
+    }
+}
+
+.block_footer {
+    padding-top: 15px;
+    text-align: right;
+
+    @include start-at("xslg") {
+        display: none;
     }
 }
 
@@ -136,5 +162,10 @@ function copyLink(link) {
     background-color: red;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.btn-lg {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 </style>
